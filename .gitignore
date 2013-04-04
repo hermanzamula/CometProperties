@@ -7,6 +7,7 @@
 .metadata
 *.iml
 .idea/
+target/
 bin/
 tmp/
 *.tmp
