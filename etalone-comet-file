@@ -1,0 +1,145 @@
+# Comet MS/MS search engine parameters file.
+
+database_name = database.fasta
+decoy_search = 0
+
+num_threads = 0
+
+#
+# masses
+#
+peptide_mass_tolerance = 3.00
+peptide_mass_units = 0
+mass_type_parent = 1
+mass_type_fragment = 1
+precursor_tolerance_type = 0
+isotope_error = 0
+
+
+#
+# search enzyme
+#
+search_enzyme_number = 1
+num_enzyme_termini = 1
+allowed_missed_cleavage = 2
+
+#
+# Up to 6 variable modifications are supported
+#
+variable_mod1 = 15.9949 M 0 3
+variable_mod2 = 0.0 X 0 3
+variable_mod3 = 0.0 X 0 3
+variable_mod4 = 0.0 X 0 3
+variable_mod5 = 0.0 X 0 3
+variable_mod6 = 0.0 X 0 3
+max_variable_mods_in_peptide = 5
+
+
+#
+# fragment ions
+#
+fragment_bin_tol = 0.36
+fragment_bin_offset = 0.11
+theoretical_fragment_ions = 0
+use_A_ions = 0
+use_B_ions = 1
+use_C_ions = 0
+use_X_ions = 0
+use_Y_ions = 1
+use_Z_ions = 0
+use_NL_ions = 1
+
+#
+# output
+#
+
+output_sqtstream = 0
+output_sqtfile = 0
+output_pepxmlfile = 1
+output_outfiles = 0
+print_expect_score = 1
+num_output_lines = 5
+show_fragment_ions = 0
+sample_enzyme_number = 1
+
+#
+# mzXML parameters
+#
+scan_range = 0 0
+precursor_charge = 0 0
+ms_level = 2
+activation_method = ALL
+
+#
+# misc parameters
+#
+digest_mass_range = 600.0 5000.0
+num_results = 50
+skip_researching = 1
+max_fragment_charge = 3
+nucleotide_reading_frame = 0
+clip_nterm_methionine = 0
+
+#
+# spectral processing
+#
+minimum_peaks = 5
+minimum_intensity = 0
+remove_precursor_peak = 0
+remove_precursor_tolerance = 1.5
+
+#
+# additional modifications
+#
+variable_C_terminus = 0.0
+variable_N_terminus = 0.0
+variable_C_terminus_distance = -1
+variable_N_terminus_distance = -1
+
+add_Cterm_peptide = 0.0
+add_Nterm_peptide = 0.0
+add_Cterm_protein = 0.0
+add_Nterm_protein = 0.0
+
+add_G_glycine = 0.0000
+add_A_alanine = 0.0000
+add_S_serine = 0.0000
+add_P_proline = 0.0000
+add_V_valine = 0.0000
+add_T_threonine = 0.0000
+add_C_cysteine = 57.021464
+add_L_leucine = 0.0000
+add_I_isoleucine = 0.0000
+add_N_asparagine = 0.0000
+add_D_aspartic_acid = 0.0000
+add_Q_glutamine = 0.0000
+add_K_lysine = 0.0000
+add_E_glutamic_acid = 0.0000
+add_M_methionine = 0.0000
+add_O_ornithine = 0.0000
+add_H_histidine = 0.0000
+add_F_phenylalanine = 0.0000
+add_R_arginine = 0.0000
+add_Y_tyrosine = 0.0000
+add_W_tryptophan = 0.0000
+add_B_user_amino_acid = 0.0000
+add_J_user_amino_acid = 0.0000
+add_U_user_amino_acid = 0.0000
+add_X_user_amino_acid = 0.0000
+add_Z_user_amino_acid = 0.0000
+
+#
+# COMET_ENZYME_INFO
+#
+[COMET_ENZYME_INFO]
+0.	No_enzyme                  0          -           -
+1.	Trypsin                    1          P          KR
+2.	Trypsin/P                  1          -          KR
+3.	Lys_C                      1          P           K
+4.	Lys_N                      0          -           K
+5.	Arg_C                      1          P           R
+6.	Asp_N                      0          -           D
+7.	CNBr                       1          -           M
+8.	Glu_C                      1          P          DE
+9.	PepsinA                    1          P          FL
+10.	Ghymotrypsin               1          P        FWYL
